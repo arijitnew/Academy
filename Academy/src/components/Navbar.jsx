@@ -138,12 +138,11 @@ export default function Navbar() {
       >
         {/* LOGO */}
         <a href="/" className="flex items-center mr-3 sm:mr-6 md:mr-10">
-        <img
-  src={academyLogo}
-  alt="Academy"
-  className="w-[150px] h-[55px] object-contain"
-/>
-
+          <img
+            src={academyLogo}
+            alt="Academy"
+            className="w-[150px] h-[55px] object-contain"
+          />
         </a>
 
         {/* MENU */}
@@ -155,7 +154,7 @@ export default function Navbar() {
             text-[9px] sm:text-xs md:text-sm lg:text-base
             font-normal
             text-[#111111]
-            ml-1 sm:ml-6 md:ml-[140px]
+            ml-1 sm:ml-6 md:ml-[40px]
           "
         >
           {/* Explore – NO arrow */}
@@ -203,7 +202,7 @@ export default function Navbar() {
         </div>
 
         {/* AUTH BUTTONS */}
-        <div className="flex flex-1 justify-end items-center gap-1 sm:gap-2 md:gap-3">
+        <div className="flex ml-auto justify-end items-center gap-1 sm:gap-2 md:gap-3">
           <button
             className="
               rounded-full
@@ -238,11 +237,3 @@ export default function Navbar() {
     </header>
   );
 }
-
-
-
-
-
-
-
-
