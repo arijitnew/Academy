@@ -70,7 +70,7 @@ export default function Navbar() {
           <button
             className="
               rounded-full
-              bg-pink-600
+              bg-[#E10051]
               px-2 sm:px-3 md:px-4
               py-[2px] sm:py-1
               text-[9px] sm:text-xs md:text-sm
