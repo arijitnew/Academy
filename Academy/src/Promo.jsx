@@ -22,6 +22,7 @@ export default function PromoBanner() {
           py-2
           text-center
           text-xs
+          mb-3
           sm:text-sm
           md:text-base
         "
