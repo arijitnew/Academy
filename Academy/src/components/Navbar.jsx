@@ -22,35 +22,69 @@ export default function Navbar() {
           />
         </a>
 
-        {/* MENU – same place, just shrunk on small screens */}
+        {/* MENU */}
         <div
           className="
             flex
             items-center
             gap-2 sm:gap-4 md:gap-8
-            text-[9px] xs:text-[10px] sm:text-xs md:text-sm lg:text-base
+            text-[9px] sm:text-xs md:text-sm lg:text-base
             font-normal
             text-[#111111]
             ml-1 sm:ml-6 md:ml-[140px]
           "
         >
-          <button className="flex items-center gap-1 whitespace-nowrap">
+          {/* Explore – NO arrow */}
+          <button className="flex items-center whitespace-nowrap">
             Explore Courses
-            <span className="text-[8px] sm:text-[10px] md:text-xs">▼</span>
           </button>
 
+          {/* Shared arrow icon */}
+          {/*
+            You can reuse this <svg> wherever you want a dropdown arrow.
+            Size scales with w-3 h-3 – tweak if needed to match Figma.
+          */}
+
+          {/* Growth with arrow */}
           <button className="flex items-center gap-1 whitespace-nowrap">
-            Growth
-            <span className="text-[8px] sm:text-[10px] md:text-xs">▼</span>
+            <span>Growth</span>
+            <svg
+              className="w-3 h-3"
+              viewBox="0 0 10 6"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1 1L5 5L9 1"
+                stroke="currentColor"
+                strokeWidth="1.2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
           </button>
 
+          {/* Resources with same arrow */}
           <button className="flex items-center gap-1 whitespace-nowrap">
-            Resources
-            <span className="text-[8px] sm:text-[10px] md:text-xs">▼</span>
+            <span>Resources</span>
+            <svg
+              className="w-3 h-3"
+              viewBox="0 0 10 6"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1 1L5 5L9 1"
+                stroke="currentColor"
+                strokeWidth="1.2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
           </button>
         </div>
 
-        {/* AUTH BUTTONS – same position, slimmer on mobile */}
+        {/* AUTH BUTTONS */}
         <div className="flex flex-1 justify-end items-center gap-1 sm:gap-2 md:gap-3">
           <button
             className="
@@ -86,6 +120,7 @@ export default function Navbar() {
     </header>
   );
 }
+
 
 
 
