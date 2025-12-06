@@ -4,6 +4,10 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero"
 import Stats from "./components/Stats";
 import Ratings from "./components/Ratings"
+import TechStack from "./components/Techstack";
+import TrendingCourses from "./components/Trendingcourses";
+import Logo from "./components/Logo"
+import GrowSkillSection from "./components/Growskills";
 export default function App()
 {return(<div>
 <PromoBanner/>
@@ -12,7 +16,11 @@ export default function App()
   <Hero />
 </div>
   <Stats/>
-  <Ratings/>
+ <Ratings/>
+ <TechStack/>
+ <TrendingCourses/>
+ <Logo/>
+ <GrowSkillSection/>
 </div>
 )
 }
