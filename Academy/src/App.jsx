@@ -8,6 +8,8 @@ import TechStack from "./components/Techstack";
 import TrendingCourses from "./components/Trendingcourses";
 import Logo from "./components/Logo"
 import GrowSkillSection from "./components/Growskills";
+import Course from "./components/Course";
+import TopCourses from "./components/TopCourses";
 export default function App()
 {return(<div>
 <PromoBanner/>
@@ -21,6 +23,8 @@ export default function App()
  <TrendingCourses/>
  <Logo/>
  <GrowSkillSection/>
+ <Course/>
+ <TopCourses/>
 </div>
 )
 }
