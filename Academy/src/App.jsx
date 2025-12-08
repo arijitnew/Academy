@@ -11,6 +11,7 @@ import GrowSkillSection from "./components/Growskills";
 import Course from "./components/Course";
 import TopCourses from "./components/TopCourses";
 import FAQSection from "./components/FAQsection";
+import Footer from "./components/Footer";
 export default function App()
 {return(<div>
 <PromoBanner/>
@@ -27,6 +28,7 @@ export default function App()
  <Course/>
  <TopCourses/>
  <FAQSection/>
+ <Footer/>
 </div>
 )
 }

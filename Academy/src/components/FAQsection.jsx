@@ -71,12 +71,14 @@ export default function FAQSection() {
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-
+          
+          {/* LEFT COLUMN */}
           <div className="space-y-4">
             {leftColumn.map((faq) => {
               const isOpen = openId === faq.id;
               return (
                 <div key={faq.id} className="rounded-lg bg-[#F2F2F2]">
+                  
                   <button
                     onClick={() => handleToggle(faq.id)}
                     className="w-full flex items-center justify-between px-6 py-4"
@@ -89,14 +91,25 @@ export default function FAQSection() {
                       {faq.question}
                     </span>
 
-                    {/* Just chevron icon */}
-                    <span
-                      className={`text-xl transition-transform ${
-                        isOpen ? "rotate-180" : "rotate-0"
+                    {/* ARROW SVG */}
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className={`w-5 h-5 transition-transform duration-200 ${
+                        isOpen
+                          ? "rotate-180 text-[#E10051]"
+                          : "rotate-0 text-black"
                       }`}
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      strokeWidth={2}
                     >
-                      ˅
-                    </span>
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M19 9l-7 7-7-7"
+                      />
+                    </svg>
                   </button>
 
                   {isOpen && (
@@ -104,16 +117,19 @@ export default function FAQSection() {
                       {faq.answer}
                     </div>
                   )}
+
                 </div>
               );
             })}
           </div>
 
+          {/* RIGHT COLUMN */}
           <div className="space-y-4">
             {rightColumn.map((faq) => {
               const isOpen = openId === faq.id;
               return (
                 <div key={faq.id} className="rounded-lg bg-[#F2F2F2]">
+
                   <button
                     onClick={() => handleToggle(faq.id)}
                     className="w-full flex items-center justify-between px-6 py-4"
@@ -126,13 +142,25 @@ export default function FAQSection() {
                       {faq.question}
                     </span>
 
-                    <span
-                      className={`text-xl transition-transform ${
-                        isOpen ? "rotate-180" : "rotate-0"
+                    {/* ARROW SVG */}
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className={`w-5 h-5 transition-transform duration-200 ${
+                        isOpen
+                          ? "rotate-180 text-[#E10051]"
+                          : "rotate-0 text-black"
                       }`}
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      strokeWidth={2}
                     >
-                      ˅
-                    </span>
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M19 9l-7 7-7-7"
+                      />
+                    </svg>
                   </button>
 
                   {isOpen && (
@@ -140,6 +168,7 @@ export default function FAQSection() {
                       {faq.answer}
                     </div>
                   )}
+
                 </div>
               );
             })}
@@ -150,3 +179,4 @@ export default function FAQSection() {
     </section>
   );
 }
+
