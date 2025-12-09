@@ -214,7 +214,7 @@ export default function Hero() {
         <div
           className="
             relative
-            z-10
+            z-11
             flex
             flex-col
             justify-center
