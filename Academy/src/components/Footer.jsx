@@ -345,7 +345,7 @@ import mastercard from "../assets/mastercard.webp";
 import am from "../assets/Am.png";
 import upi from "../assets/Upi.png";
 import gpay from "../assets/Gpay.png";
-import phonepe from "../assets/Phonepe1.png";
+import phonepe from "../assets/PhonePe1.png";
 
 // STORE BUTTONS
 import Playstore from "../assets/Playstore.png";
