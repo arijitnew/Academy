@@ -3,7 +3,6 @@ import React from "react";
 export default function Stats() {
   const stats = [
     {
-      // people icon
       icon: (
         <svg
           viewBox="0 0 24 24"
@@ -31,9 +30,7 @@ export default function Stats() {
       title: "Active Learners",
       subtitle: "Growing community",
     },
-
     {
-      // book icon
       icon: (
         <svg
           viewBox="0 0 24 24"
@@ -60,9 +57,7 @@ export default function Stats() {
       title: "Expert Courses",
       subtitle: "Across all categories",
     },
-
     {
-      // certificate icon
       icon: (
         <svg
           viewBox="0 0 24 24"
@@ -70,13 +65,7 @@ export default function Stats() {
           className="w-8 h-8"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <circle
-            cx="12"
-            cy="8"
-            r="4"
-            stroke="#E10051"
-            strokeWidth="1.8"
-          />
+          <circle cx="12" cy="8" r="4" stroke="#E10051" strokeWidth="1.8" />
           <path
             d="M10 12L8.5 18L12 16L15.5 18L14 12"
             stroke="#E10051"
@@ -90,9 +79,7 @@ export default function Stats() {
       title: "Certificates Issued",
       subtitle: "Career advancement",
     },
-
     {
-      // updated chart icon (no bottom line)
       icon: (
         <svg
           viewBox="0 0 24 24"
@@ -100,7 +87,6 @@ export default function Stats() {
           className="w-8 h-8"
           xmlns="http://www.w3.org/2000/svg"
         >
-          {/* rising curve */}
           <path
             d="M6 16L10 12.5L13.5 14.5L18 9"
             stroke="#E10051"
@@ -108,7 +94,6 @@ export default function Stats() {
             strokeLinecap="round"
             strokeLinejoin="round"
           />
-          {/* arrow head */}
           <path
             d="M15 9H18V12"
             stroke="#E10051"
@@ -126,11 +111,9 @@ export default function Stats() {
 
   return (
     <div className="w-full max-w-[1200px] mx-auto py-16">
-      <div className="grid grid-cols-4 text-center gap-6">
+      <div className="grid grid-cols-2 md:grid-cols-4 text-center gap-6">
         {stats.map((item, index) => (
           <div key={index} className="flex flex-col items-center">
-            
-            {/* Icon circle */}
             <div className="w-16 h-16 rounded-full bg-[#E10051]/10 flex items-center justify-center mb-4">
               {item.icon}
             </div>
@@ -152,6 +135,7 @@ export default function Stats() {
     </div>
   );
 }
+
 
 
 
